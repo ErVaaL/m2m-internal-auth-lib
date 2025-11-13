@@ -3,3 +3,5 @@ internal-auth-client/.settings
 internal-auth-client/.classpath
 internal-auth-client/.factorypath
 internal-auth-client/.project
+internal-auth-client/target
+internal-auth-server/target
