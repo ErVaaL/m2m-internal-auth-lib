@@ -2,7 +2,25 @@
 
 This library provides a simple interface for establishing machine-to-machine (m2m) secured connections to REST API projects. It handles requests based on client and server ids, secret and scopes.
 
-### To use it in Java Maven project:
+## Protocol overview
+
+The library implements a custom OAuth2-like protocol for internal service-to-service authentication.
+
+```
+POST /internal/oauth/token
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic base64(client_id:client_secret)
+response: { access_token, token_type, expires_in, scope, exp }
+usage: Secured-Authorization: Bearer {access_token}
+
+(custom header name can be configured)
+```
+
+This protocol should be implemented for situations where one service is made in Java and another in different language/framework.
+
+The library / protocol itself is not tied to REST but can also be used with technologies like: gRPC, WebSockets, RabbbitMQ, Kafka, etc.
+
+### Java Maven project implementation:
 
 To have library visible for your project either:
 
