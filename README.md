@@ -340,7 +340,7 @@ public class InternalAuthClientConfig {
     public ExchangeFilterFunction internalBearerFilter(InternalAuthHeader header) {
         return (request, next) -> next.exchange(
             ClientRequest.from(request)
-                .headers(h -> h.set(header.headerName(), "Bearer " + header.tm().currentToken()))
+                .headers(h -> h.set(header.headerName(), "Bearer " + header.tokenManager().currentToken()))
                 .build()
         );
     }
