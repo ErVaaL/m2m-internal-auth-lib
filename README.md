@@ -3,8 +3,22 @@
 This library provides a simple interface for establishing machine-to-machine (m2m) secured connections to REST API projects. It handles requests based on client and server ids, secret and scopes.
 
 ### To use it in Java Maven project:
-- current version: 1.0-SNAPSHOT
 
+To have library visible for your project either:
+
+Download the repo and put it as a submodule in your project or:
+
+Download the project and run in terminal:
+```bash
+ mvn clean install
+```
+Then you will be able to find the .jar files in your local maven repository (on your machine)
+The files should be under
+```
+{maven localization}/repository/com/m2m/internal/.../server|client/...
+```
+- current version: 1.0-SNAPSHOT
+### Add them to your projects:
 ### Server (issuer)
 ```xml
 <dependency>
