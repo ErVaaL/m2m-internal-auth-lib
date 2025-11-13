@@ -1,0 +1,7 @@
+com/m2m/internal/auth/InternalOAuthClientConfig.class
+com/m2m/internal/auth/InternalOAuthClient.class
+com/m2m/internal/auth/InternalAuthHeader.class
+com/m2m/internal/auth/InternalAccessTokenManager.class
+com/m2m/internal/auth/InternalOAuthClient$TokenPayload.class
+com/m2m/internal/auth/InternalOAuthClient$TokenResponse.class
+com/m2m/internal/auth/TokenRefresher.class
