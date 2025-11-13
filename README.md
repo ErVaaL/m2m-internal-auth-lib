@@ -179,7 +179,7 @@ public class InternalClientStoreConfig {
 
         return new InMemoryInternalClientStore(map);
     }
-    // Or replace code below with Redis / other solution
+
     private InMemoryInternalClientStore.Client toClient(
         String clientId,
         InternalClientsProperties.ClientProps props
