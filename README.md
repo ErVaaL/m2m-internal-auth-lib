@@ -1,4 +1,4 @@
-## Library for m2m secured connections to EasyRealm API
+## Library for m2m secured connections
 
 This library provides a simple interface for establishing machine-to-machine (m2m) secured connections to REST API projects. It handles requests based on client and server ids, secret and scopes.
 
