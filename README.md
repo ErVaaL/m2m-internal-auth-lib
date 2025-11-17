@@ -18,7 +18,7 @@ usage: Secured-Authorization: Bearer {access_token}
 
 This protocol should be implemented for situations where one service is made in Java and another in different language/framework.
 
-The library / protocol itself is not tied to REST but can also be used with technologies like: gRPC, WebSockets, RabbbitMQ, Kafka, etc.
+The library / protocol itself is not tied to REST and should aslo work with technologies like: gRPC, WebSockets, RabbbitMQ, Kafka, etc.
 
 ### Java Maven project implementation:
 
